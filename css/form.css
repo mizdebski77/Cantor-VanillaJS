@@ -1,0 +1,93 @@
+.formInput__title {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.form__input {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    padding-top: 0;
+
+}
+
+.form__gridDisplay {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+.formInput__value {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.formInput__select {
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.formTargetCurrency__select {
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width:1200px) {
+    .formInput__title {
+        text-align: center;
+    }
+
+    .form__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 10px;
+        padding-top: 0;
+
+    }
+
+    .form__gridDisplay {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .formInput__value {
+        width: 70%;
+    }
+
+    .formInput__select {
+        width: 70%;
+    }
+
+    .formTargetCurrency__select {
+        width: 70%;
+        padding: 0;
+    }
+}
+
+@media (max-width:767px) {
+
+
+    .formInput__value {
+        width: 100%;
+    }
+
+    .formInput__select {
+        width: 100%;
+    }
+
+    .formTargetCurrency__select {
+        width: 100%;
+        padding: 0;
+    }
+}

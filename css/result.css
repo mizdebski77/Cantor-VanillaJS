@@ -1,0 +1,13 @@
+.result__field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+@media (max-width:1200px) {
+    .result__field {
+        padding: 20px;
+    }
+}

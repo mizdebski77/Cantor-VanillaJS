@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/result.css" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+    <script defer src="script.js"></script>
+    <title> Currency Calculator </title>
+</head>
+
+<body class="body">
+
+    <main class="container">
+        <h1 class="container__header"> Currency Calculator </h1>
+
+        <form class="form js-form">
+            <label class="form__label">
+                <div class="form__gridDisplay">
+                    <div>
+                        <div class="formInput__title"> Amount: </div>
+
+                        <div class="form__input">
+                            <input type="name" class="formInput__value js-amount" min="0" placeholder="Enter a value">
+                            <select class="formInput__select js-currencCurrency">
+                                <option value="PLN"> Pln </option>
+                                <option value="€"> Euro </option>
+                                <option value="$"> Dolar </option>
+                            </select>
+                        </div>
+
+                        <div class="formInput__title"> Currency: </div>
+                        <div class="form__input">
+                            <select class="formTargetCurrency__select js-targetCurrency">
+                                <option value="PLN"> Pln </option>
+                                <option value="€"> Euro </option>
+                                <option value="$"> Dolar </option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="result__field js-result"></div>
+                </div>
+
+            </label>
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
